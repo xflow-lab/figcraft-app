@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="420" viewBox="0 0 880 420" font-family="-apple-system, 'PingFang SC', 'Helvetica Neue', Arial, sans-serif">
+  <style>
+    :root { --d: 9.6s; }
+    .loop { animation-duration: 9.6s; animation-iteration-count: infinite; animation-timing-function: cubic-bezier(.2,.8,.2,1); animation-fill-mode: both; }
+    .drop  { animation-name: drop; }
+    .comp  { animation-name: comp; }
+    .type  { animation-name: type; animation-timing-function: steps(34, end); }
+    .caret { animation-name: caret; animation-timing-function: steps(1); }
+    .press { animation-name: press; animation-timing-function: linear; }
+    .shim  { animation-name: shim; animation-timing-function: linear; }
+    .frameon { animation-name: frameon; animation-timing-function: linear; }
+    .reveal{ animation-name: reveal; }
+    .port  { animation-name: port; }
+    .wire  { animation-name: wire; animation-timing-function: linear; }
+    .video { animation-name: video; }
+    .cap1  { animation-name: cap1; animation-timing-function: linear; }
+    .cap2  { animation-name: cap2; animation-timing-function: linear; }
+    .cap3  { animation-name: cap3; animation-timing-function: linear; }
+    .cap4  { animation-name: cap4; animation-timing-function: linear; }
+    .dot   { animation-name: dot; animation-timing-function: linear; }
+
+    /* 0.3s 落图 → 1.0s 生成区 → 1.3–3.3s 打字 → 3.7s 按下 → 4.8s 出图 → 5.6s 端口 → 5.9s 连线 → 6.6s 视频 → 8.2s 停 → 9.6s */
+    @keyframes drop   { 0%{opacity:0;transform:translate(0,-14px) scale(.94)} 3.1%{opacity:0;transform:translate(0,-14px) scale(.94)} 9%{opacity:1;transform:translate(0,0) scale(1)} 100%{opacity:1;transform:translate(0,0) scale(1)} }
+    @keyframes comp   { 0%,10.4%{opacity:0;transform:translate(0,-8px)} 15%{opacity:1;transform:translate(0,0)} 100%{opacity:1;transform:translate(0,0)} }
+    @keyframes type   { 0%,13.5%{width:0} 34.4%{width:336px} 100%{width:336px} }
+    @keyframes caret  { 0%,13.5%{opacity:0} 13.6%,34.4%{opacity:1} 34.5%,100%{opacity:0} }
+    @keyframes press  { 0%,38.5%{fill:rgba(255,255,255,.12)} 38.6%,100%{fill:#ffffff} }
+    @keyframes shim   { 0%,38.5%{opacity:0;transform:translate(-240px,0)} 38.6%{opacity:1;transform:translate(-240px,0)} 50%{opacity:1;transform:translate(240px,0)} 50.1%,100%{opacity:0;transform:translate(240px,0)} }
+    @keyframes frameon{ 0%,38.5%{opacity:.55} 38.6%,50%{opacity:1} 50.1%,100%{opacity:.55} }
+    @keyframes reveal { 0%,50%{opacity:0} 54%{opacity:1} 100%{opacity:1} }
+    @keyframes port   { 0%,58.3%{opacity:0;transform:scale(.6)} 61%{opacity:1;transform:scale(1)} 100%{opacity:1;transform:scale(1)} }
+    @keyframes wire   { 0%,61.4%{stroke-dashoffset:600;opacity:0} 61.5%{opacity:1;stroke-dashoffset:600} 68%{stroke-dashoffset:0;opacity:1} 100%{stroke-dashoffset:0;opacity:1} }
+    @keyframes video  { 0%,68.7%{opacity:0;transform:translate(0,0) scale(.94)} 73%{opacity:1;transform:translate(0,0) scale(1)} 100%{opacity:1;transform:translate(0,0) scale(1)} }
+    @keyframes dot    { 0%,38.5%{fill:rgba(255,255,255,.3)} 38.6%,50%{fill:#f5b642} 50.1%,100%{fill:#3ddc84} }
+    @keyframes cap1   { 0%,3%{opacity:0} 4%,9%{opacity:1} 10.4%,100%{opacity:0} }
+    @keyframes cap2   { 0%,10.4%{opacity:0} 11.5%,37%{opacity:1} 38.5%,100%{opacity:0} }
+    @keyframes cap3   { 0%,38.5%{opacity:0} 39.5%,57%{opacity:1} 58.3%,100%{opacity:0} }
+    @keyframes cap4   { 0%,58.3%{opacity:0} 59.5%,98%{opacity:1} 100%{opacity:0} }
+  </style>
+
+  <defs>
+    <linearGradient id="fr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".75"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".7"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,.08)"/>
+    </pattern>
+    <clipPath id="imgclip"><rect x="0" y="0" width="240" height="135" rx="16"/></clipPath>
+  </defs>
+
+  <rect width="880" height="420" fill="#0a0a0b"/>
+  <rect width="880" height="420" fill="url(#dots)"/>
+
+  <!-- demo tag -->
+  <g transform="translate(24 22)">
+    <rect width="84" height="22" rx="11" fill="rgba(255,255,255,.06)"/>
+    <circle cx="15" cy="11" r="5" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
+    <path d="M13.5 8.6 L17.5 11 L13.5 13.4 Z" fill="rgba(255,255,255,.6)"/>
+    <text x="26" y="15" font-size="11" fill="rgba(255,255,255,.5)">Demo</text>
+  </g>
+
+  <!-- image node -->
+  <g class="loop drop" style="transform-origin:280px 160px">
+    <g transform="translate(160 80)">
+      <!-- capsule -->
+      <g transform="translate(70 -38)">
+        <rect x=".5" y=".5" width="99" height="31" rx="15.5" fill="rgba(27,27,29,.95)" stroke="url(#fr)" stroke-width="1"/>
+        <rect x="13" y="10" width="12" height="12" rx="2" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.2"/>
+        <circle cx="17" cy="14" r="1.2" fill="rgba(255,255,255,.6)"/>
+        <path d="M14 20 L18.5 16 L21 18 L24 15.5" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.2"/>
+        <text x="32" y="20.5" font-size="12" fill="rgba(255,255,255,.85)">Product</text>
+        <circle class="loop dot" cx="86" cy="16" r="3" fill="rgba(255,255,255,.3)"/>
+      </g>
+      <!-- card -->
+      <rect x="0" y="0" width="240" height="135" rx="16" fill="#131315"/>
+      <rect class="loop frameon" x=".5" y=".5" width="239" height="134" rx="16" fill="none" stroke="url(#fr)" stroke-width="1"/>
+      <!-- placeholder icon -->
+      <g transform="translate(104 52)" stroke="rgba(255,255,255,.25)" stroke-width="1.4" fill="none">
+        <rect x="0" y="4" width="26" height="26" rx="4"/>
+        <circle cx="8" cy="12" r="2.2"/>
+        <path d="M2 27 L11 18 L17 24 L21 20 L26 25"/>
+        <path d="M27 3 v8 M23 7 h8"/>
+      </g>
+      <!-- result (grey geometry) -->
+      <g class="loop reveal" clip-path="url(#imgclip)">
+        <rect width="240" height="135" fill="#1c1c1f"/>
+        <circle cx="176" cy="42" r="16" fill="rgba(255,255,255,.55)"/>
+        <path d="M0 110 L60 70 L100 96 L150 58 L240 104 L240 135 L0 135 Z" fill="rgba(255,255,255,.22)"/>
+        <path d="M0 135 L40 105 L90 125 L130 100 L240 135 Z" fill="rgba(255,255,255,.38)"/>
+      </g>
+      <!-- shimmer -->
+      <g clip-path="url(#imgclip)">
+        <rect class="loop shim" x="0" y="0" width="240" height="135" fill="url(#shimg)"/>
+      </g>
+      <!-- port -->
+      <g class="loop port" style="transform-origin:282px 67px">
+        <circle cx="282" cy="67" r="12" fill="#1b1b1d" stroke="rgba(255,255,255,.4)" stroke-width="1"/>
+        <path d="M282 62 v10 M277 67 h10" stroke="rgba(255,255,255,.8)" stroke-width="1.2"/>
+      </g>
+      <!-- composer -->
+      <g class="loop comp" transform="translate(-45 145)">
+        <rect x=".5" y=".5" width="329" height="71" rx="16" fill="#131315" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+        <text x="14" y="26" font-size="12" fill="rgba(255,255,255,.3)">Describe the image you want...</text>
+        <!-- typed line: revealed by an expanding white-ish rect -->
+        <g>
+          <rect x="12" y="12" width="0" height="20" fill="#131315" class="loop type"/>
+          <clipPath id="typeclip"><rect x="12" y="12" height="20" class="loop type" width="0"/></clipPath>
+          <rect x="12" y="12" width="300" height="20" fill="#131315" clip-path="url(#typeclip)"/>
+          <text x="14" y="26" font-size="12" fill="rgba(255,255,255,.88)" clip-path="url(#typeclip)">A white sneaker floating in a grey studio, soft top light</text>
+        </g>
+        <rect x="12" y="42" width="112" height="20" rx="10" fill="rgba(255,255,255,.07)"/>
+        <text x="22" y="56" font-size="10.5" fill="rgba(255,255,255,.6)">Seedream 5.0 · 16:9</text>
+        <circle class="loop press" cx="303" cy="52" r="13" fill="rgba(255,255,255,.12)"/>
+        <path d="M298 57 L309 52 L298 47 L300 52 Z" fill="rgba(0,0,0,.85)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- wire -->
+  <path class="loop wire" d="M 450 147 C 500 147, 530 147, 572 147" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.5" stroke-dasharray="600" stroke-dashoffset="600"/>
+
+  <!-- video node -->
+  <g class="loop video" style="transform-origin:700px 147px">
+    <g transform="translate(580 80)">
+      <g transform="translate(78 -38)">
+        <rect x=".5" y=".5" width="83" height="31" rx="15.5" fill="rgba(27,27,29,.95)" stroke="url(#fr)" stroke-width="1"/>
+        <rect x="13" y="10" width="13" height="12" rx="2" fill="none" stroke="rgba(255,255,255,.6)" stroke-width="1.2"/>
+        <path d="M13 13 h13 M17 10 v12 M22 10 v12" stroke="rgba(255,255,255,.6)" stroke-width="1"/>
+        <text x="33" y="20.5" font-size="12" fill="rgba(255,255,255,.85)">Video</text>
+        <circle cx="72" cy="16" r="3" fill="rgba(255,255,255,.3)"/>
+      </g>
+      <rect x="0" y="0" width="240" height="135" rx="16" fill="#131315"/>
+      <rect x=".5" y=".5" width="239" height="134" rx="16" fill="none" stroke="url(#fr)" stroke-width="1" opacity=".55"/>
+      <g transform="translate(106 53)" stroke="rgba(255,255,255,.25)" stroke-width="1.4" fill="none">
+        <rect x="0" y="2" width="28" height="24" rx="4"/>
+        <path d="M0 9 h28 M7 2 v24 M21 2 v24"/>
+      </g>
+      <rect x="12" y="103" width="82" height="20" rx="10" fill="rgba(255,255,255,.07)"/>
+      <text x="21" y="117" font-size="10.5" fill="rgba(255,255,255,.6)">Wan 3.0 · 5s</text>
+    </g>
+  </g>
+
+  <!-- captions -->
+  <g font-size="13" fill="rgba(255,255,255,.55)" text-anchor="middle">
+    <text class="loop cap1" x="440" y="372">Drop an image in — it becomes a node</text>
+    <text class="loop cap2" x="440" y="372">Write what you want right under the node</text>
+    <text class="loop cap3" x="440" y="372">Hit generate; the result lands on the node itself</text>
+    <text class="loop cap4" x="440" y="372">Drag a line from the port into a video node to make it move</text>
+  </g>
+
+  <defs>
+    <linearGradient id="shimg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset=".3" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".10"/>
+      <stop offset=".7" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
