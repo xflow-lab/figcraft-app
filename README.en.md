@@ -56,13 +56,13 @@ FigCraft is not another "type a prompt, wait for an image" web page. It is an ag
 | Website | [figcraft.ai](https://figcraft.ai) · China mirror [figcraft.cn](https://figcraft.cn) |
 | Company | [QINAXIS · qinaxis.com](https://qinaxis.com) |
 | Our other product | [Beline · beline.ai](https://beline.ai) — an AI that runs your X (Twitter) account |
-| Support | <support@qinaxis.com> |
+| Support | <support@qinaxis.cn> |
 
 ## About this repository
 
 This repository holds installers, release notes and an introduction only. FigCraft is closed-source; the source code is not here and will not be pushed here.
 
-- Feedback: <support@qinaxis.com> or Issues
+- Feedback: <support@qinaxis.cn> or Issues
 - Changelog: see [Releases](https://github.com/xflow-lab/figcraft-app/releases)
 
 ---

@@ -56,7 +56,7 @@ FigCraft 不是又一个"输入提示词、等图"的网页。它是一个装在
 
 这里只放安装包、更新日志和介绍。FigCraft 是闭源软件，源代码不在这里，也不会推送到这里。
 
-- 问题反馈：<support@qinaxis.com> 或本仓库 Issues
+- 问题反馈：<support@qinaxis.cn> 或本仓库 Issues
 - 更新日志：见 [Releases](https://github.com/xflow-lab/figcraft-app/releases)
 
 ## 链接
@@ -66,7 +66,7 @@ FigCraft 不是又一个"输入提示词、等图"的网页。它是一个装在
 | 官网 | [figcraft.ai](https://figcraft.ai) · 中国访问 [figcraft.cn](https://figcraft.cn) |
 | 公司 | [QINAXIS · qinaxis.com](https://qinaxis.com) |
 | 我们的另一款产品 | [Beline · beline.ai](https://beline.ai) — 让 AI 替你运营 X（Twitter）账号 |
-| 支持 | <support@qinaxis.com> |
+| 支持 | <support@qinaxis.cn> |
 
 ## 合规
 
