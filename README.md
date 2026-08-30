@@ -28,11 +28,6 @@
   <img src="assets/demo.svg" width="880" alt="FigCraft canvas demo: drop an image, write a prompt, generate, wire it into a video node">
 </p>
 
-<p align="center">
-  <a href="https://github.com/xflow-lab/figcraft-app/raw/main/assets/demo.mp4"><img src="assets/demo-poster.jpg" width="880" alt="录屏演示：让智能体做一支公司官网介绍视频"></a><br>
-  <sub><b>录屏 · 96 秒</b>　对智能体说「帮我做一个公司官网介绍视频」，选中「万相 3.0 · 品牌 TVC 创意广告」技巧：它读官网、提问确认、写出分镜脚本、在画布上建好六个视频节点并配好参数，停在生成前等你拍板。等待段落 3 倍速。</sub>
-</p>
-
 ---
 
 ## 下载
