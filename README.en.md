@@ -70,9 +70,24 @@ In short: **reasoning and execution are local, compute is in the cloud.** Your f
 
 ### Screenshots
 
-<p align="center"><img src="assets/screens/canvas-nodes.jpg" width="46%" alt="Video node chain laid out by the agent"> <img src="assets/screens/chat.jpg" width="40%" alt="Agent chat panel"></p>
-<p align="center"><img src="assets/screens/voice-nodes.jpg" width="88%" alt="Voice-over and video nodes"></p>
-<p align="center"><img src="assets/screens/empty-canvas.png" width="88%" alt="Empty canvas with the agent panel"></p>
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screens/fig1-canvas.jpg" alt="Figure 1"></td>
+    <td width="50%"><img src="assets/screens/fig2-chat.jpg" alt="Figure 2"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Figure 1</b>&nbsp; Canvas: the video node chain the agent laid out per shot, each node with its own prompt and generation settings</sub></td>
+    <td align="center"><sub><b>Figure 2</b>&nbsp; Agent panel: planning in progress, tool calls visible step by step</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screens/fig3-voice.jpg" alt="Figure 3"></td>
+    <td><img src="assets/screens/fig4-empty.jpg" alt="Figure 4"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Figure 3</b>&nbsp; Voice-over nodes: voice (my voice / preset / character) and lines, wired into video nodes</sub></td>
+    <td align="center"><sub><b>Figure 4</b>&nbsp; Main window: infinite canvas on the left, agent panel on the right</sub></td>
+  </tr>
+</table>
 
 ## Links
 

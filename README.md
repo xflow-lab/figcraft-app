@@ -73,9 +73,24 @@ FigCraft 是一个运行在你电脑上的**图像智能体（image agent）**�
 
 ### 截图
 
-<p align="center"><img src="assets/screens/canvas-nodes.jpg" width="46%" alt="智能体在画布上拆出的视频节点链"> <img src="assets/screens/chat.jpg" width="40%" alt="右侧智能体对话"></p>
-<p align="center"><img src="assets/screens/voice-nodes.jpg" width="88%" alt="配音节点与视频节点"></p>
-<p align="center"><img src="assets/screens/empty-canvas.png" width="88%" alt="空画布与右侧智能体面板"></p>
+<table>
+  <tr>
+    <td width="50%"><img src="assets/screens/fig1-canvas.jpg" alt="图 1"></td>
+    <td width="50%"><img src="assets/screens/fig2-chat.jpg" alt="图 2"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>图 1</b>　画布：智能体按镜头拆出的视频节点链，每个节点带自己的提示词与生成参数</sub></td>
+    <td align="center"><sub><b>图 2</b>　对话面板：智能体规划中，工具调用逐步可见</sub></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screens/fig3-voice.jpg" alt="图 3"></td>
+    <td><img src="assets/screens/fig4-empty.jpg" alt="图 4"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>图 3</b>　配音节点：声线（我的声音 / 预置 / 角色）与台词，连线接入视频节点</sub></td>
+    <td align="center"><sub><b>图 4</b>　主界面：左侧无限画布，右侧智能体面板</sub></td>
+  </tr>
+</table>
 
 ## 这个仓库是什么
 
