@@ -16,6 +16,7 @@
 
 <p align="center">
   <a href="https://figcraft.ai">figcraft.ai</a> ·
+  <a href="https://figcraft.cn">figcraft.cn (China mirror)</a> ·
   <a href="https://github.com/xflow-lab/figcraft-app/releases/latest">Download</a> ·
   <a href="README.md">中文</a>
 </p>
@@ -47,6 +48,15 @@ FigCraft is not another "type a prompt, wait for an image" web page. It is an ag
 - **Many models** — Seedream, Wan, Grok, Gemini, GPT Image, DeepSeek, Claude, Qwen and more, picked per task, priced transparently.
 - **Voice** — record 5 seconds of your voice once; every narration uses it from then on.
 - **External tools** — connect MCP servers the agent can call.
+
+## Links
+
+| | |
+|---|---|
+| Website | [figcraft.ai](https://figcraft.ai) · China mirror [figcraft.cn](https://figcraft.cn) |
+| Company | [QINAXIS · qinaxis.com](https://qinaxis.com) |
+| Our other product | [Beline · beline.ai](https://beline.ai) — an AI that runs your X (Twitter) account |
+| Support | <support@qinaxis.com> |
 
 ## About this repository
 

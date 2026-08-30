@@ -19,8 +19,8 @@
 
 <p align="center">
   <a href="https://figcraft.ai">figcraft.ai</a> ·
-  <a href="https://figcraft.cn">figcraft.cn</a> ·
-  <a href="https://github.com/xflow-lab/figcraft-app/releases/latest">Download</a> ·
+  <a href="https://figcraft.cn">figcraft.cn（中国访问）</a> ·
+  <a href="https://github.com/xflow-lab/figcraft-app/releases/latest">下载</a> ·
   <a href="README.en.md">English</a>
 </p>
 
@@ -58,6 +58,15 @@ FigCraft 不是又一个"输入提示词、等图"的网页。它是一个装在
 
 - 问题反馈：<support@qinaxis.com> 或本仓库 Issues
 - 更新日志：见 [Releases](https://github.com/xflow-lab/figcraft-app/releases)
+
+## 链接
+
+| | |
+|---|---|
+| 官网 | [figcraft.ai](https://figcraft.ai) · 中国访问 [figcraft.cn](https://figcraft.cn) |
+| 公司 | [QINAXIS · qinaxis.com](https://qinaxis.com) |
+| 我们的另一款产品 | [Beline · beline.ai](https://beline.ai) — 让 AI 替你运营 X（Twitter）账号 |
+| 支持 | <support@qinaxis.com> |
 
 ## 合规
 
