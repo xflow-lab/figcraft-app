@@ -25,6 +25,11 @@
   <img src="assets/demo.svg" width="880" alt="FigCraft canvas demo: drop an image, write a prompt, generate, wire it into a video node">
 </p>
 
+<p align="center">
+  <a href="https://github.com/xflow-lab/figcraft-app/raw/main/assets/demo.mp4"><img src="assets/demo-poster.jpg" width="880" alt="Screen recording: the agent builds a company intro video plan"></a><br>
+  <sub><b>Screen recording · 96 s</b>&nbsp; Ask the agent for "a company website intro video" with the "Wan 3.0 · Brand TVC" skill selected: it reads the site, asks the questions that matter, writes the storyboard, builds six configured video nodes on the canvas and stops before generating. Waiting stretches at 3x.</sub>
+</p>
+
 ---
 
 ## Download
