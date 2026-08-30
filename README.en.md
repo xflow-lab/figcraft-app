@@ -1,8 +1,16 @@
-<p align="center">
-  <img src="assets/demo.svg" width="880" alt="FigCraft canvas demo: drop an image, write a prompt, generate, wire it into a video node">
-</p>
 
-<h1 align="center">FigCraft</h1>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.png">
+    <img src="assets/mark-light.png" width="96" height="96" alt="FigCraft">
+  </picture>
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/wordmark-dark.png">
+    <img src="assets/wordmark-light.png" width="220" alt="FigCraft">
+  </picture>
+</p>
 
 <p align="center">An image agent that works on your own machine.</p>
 
@@ -10,6 +18,10 @@
   <a href="https://figcraft.ai">figcraft.ai</a> ·
   <a href="https://github.com/xflow-lab/figcraft-app/releases/latest">Download</a> ·
   <a href="README.md">中文</a>
+</p>
+
+<p align="center">
+  <img src="assets/demo.svg" width="880" alt="FigCraft canvas demo: drop an image, write a prompt, generate, wire it into a video node">
 </p>
 
 ---
