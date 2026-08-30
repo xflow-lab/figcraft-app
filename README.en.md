@@ -40,14 +40,39 @@ macOS builds are notarized by Apple; Windows builds are code-signed by QINAXIS.
 
 ## What it is
 
-FigCraft is not another "type a prompt, wait for an image" web page. It is an agent installed on your computer: it reads your files, looks at your material, breaks a job into a graph of nodes on an infinite canvas, and produces the images, video and voice-over step by step.
+FigCraft is an **image agent** that runs on your computer: an autonomous agentic loop with a large language model as the planner. It breaks a goal such as "a set of product shots", "a brand film" or "a voice-over" into executable tool calls, lays the plan out as a node graph on an infinite canvas, and produces the images, video and speech step by step. It is not a "type a prompt, wait for a picture" web page.
 
-- **Infinite canvas** — images, video, documents and voice-over are all nodes; links are data flow. Drop an image and it is a node; write one line and generate; drag a line from the port into a video node to make it move.
-- **The agent works locally** — reads local files, searches, writes documents, plans; complex jobs are split across sub-agents. It stops to ask when a decision is yours.
-- **Skills** — install a way of working (product ads, short drama, brand TVC, prompt diagnosis) and select it; or write your own.
-- **Many models** — Seedream, Wan, Grok, Gemini, GPT Image, DeepSeek, Claude, Qwen and more, picked per task, priced transparently.
-- **Voice** — record 5 seconds of your voice once; every narration uses it from then on.
-- **External tools** — connect MCP servers the agent can call.
+### Local or cloud
+
+Both, with a clear boundary:
+
+| On your machine (local) | In the cloud (our API gateway) |
+|---|---|
+| The agent loop itself: planning, tool dispatch, result feedback, context management | LLM inference for chat/planning (DeepSeek, Claude, GPT, Qwen, Gemini, Grok) |
+| Reading and writing your files, directory search (ripgrep), asset parsing | Image / video / speech generation models (Seedream, Wan, Grok Imagine, GPT Image, CosyVoice, ...) |
+| Canvas, sessions, asset library, Skills, MCP connections | Accounts, credit billing, model routing and fallback, regional routes (Singapore / China nodes) |
+| Generated results saved locally | Transient relay of generated results (optional object-storage links) |
+
+In short: **reasoning and execution are local, compute is in the cloud.** Your files are not uploaded; only what you explicitly hand to a model (prompts, reference images, images to analyse) is sent as inference input.
+
+### Technical notes
+
+- **Agent loop** — a ReAct-style reason → tool call → observe loop with lazily loaded tools and structured tool results; up to 60 steps per turn, interruptible and resumable.
+- **Hierarchical sub-agents** — complex jobs are split across sub-agents (batch generation, research) that share the main loop's tool path with a narrower tool set and a prompt written by the dispatcher.
+- **Two-tier context compaction** — oversized tool results are micro-compacted in place every turn; near the context limit the whole history is auto-summarised, so long sessions keep early decisions.
+- **Model fallback and retries** — upstream failures switch models along a preset chain within the same turn; streaming with idle-based (not total-duration) timeouts, so long-thinking models are not killed.
+- **Canvas as a directed acyclic dataflow graph** — images, video, documents and audio are nodes; links carry typed slots (first frame / last frame / reference). References and frame slots are mutually exclusive on most video models, and the canvas validates and refuses invalid links. Auto-layout orders nodes by topological depth.
+- **Consistency anchors** — multi-reference conditioning (reference count adapts to each model's limit) and character/voice binding keep subjects and style consistent across shots.
+- **Permissions and approvals** — side-effecting tools go through allow / ask / deny; billable generation shows a credit estimate and an approval bar the agent cannot bypass.
+- **Skills** — a way of working is a `SKILL.md` (optionally with reference documents), injected when selected; user-authored and official.
+- **MCP (Model Context Protocol)** — external tool servers are called like built-in tools.
+- **Voice** — zero-shot voice cloning from a 5–10 s sample, cloned once and reused across nodes and sessions.
+
+### Screenshots
+
+<p align="center"><img src="assets/screens/canvas-nodes.jpg" width="46%" alt="Video node chain laid out by the agent"> <img src="assets/screens/chat.jpg" width="40%" alt="Agent chat panel"></p>
+<p align="center"><img src="assets/screens/voice-nodes.jpg" width="88%" alt="Voice-over and video nodes"></p>
+<p align="center"><img src="assets/screens/empty-canvas.png" width="88%" alt="Empty canvas with the agent panel"></p>
 
 ## Links
 
