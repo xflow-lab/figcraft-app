@@ -31,10 +31,10 @@
 
 | Platform | Installer |
 |---|---|
-| macOS (Apple silicon) | [FigCraft-2.2.5-arm64.dmg](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.5-arm64.dmg) |
-| macOS (Intel) | [FigCraft-2.2.5.dmg](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.5.dmg) |
-| Windows | [FigCraft-Setup-2.2.5.zip](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-Setup-2.2.5.zip) (unzip, run the exe) |
-| Linux | [AppImage](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.5.AppImage) · [deb](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.5-amd64.deb) |
+| macOS (Apple silicon) | [FigCraft-2.2.9-arm64.dmg](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.9-arm64.dmg) |
+| macOS (Intel) | [FigCraft-2.2.9.dmg](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.9.dmg) |
+| Windows | [FigCraft-Setup-2.2.9.zip](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-Setup-2.2.9.zip) (unzip, run the exe) |
+| Linux | [AppImage](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.9.AppImage) · [deb](https://github.com/xflow-lab/figcraft-app/releases/latest/download/FigCraft-2.2.9-amd64.deb) |
 
 macOS builds are notarized by Apple; Windows builds are code-signed by QINAXIS.
 
