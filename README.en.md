@@ -95,7 +95,7 @@ In short: **reasoning and execution are local, compute is in the cloud.** Your f
 |---|---|
 | Website | [figcraft.ai](https://figcraft.ai) · China mirror [figcraft.cn](https://figcraft.cn) |
 | Company | [QINAXIS · qinaxis.com](https://qinaxis.com) |
-| Our other product | [Beline · beline.ai](https://beline.ai) — an AI that runs your X (Twitter) account |
+| Our other product | [Beline · beline.app](https://beline.app) — an AI that runs your X (Twitter) account |
 | Support | <support@qinaxis.cn> |
 
 ## About this repository

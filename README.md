@@ -105,7 +105,7 @@ FigCraft 是一个运行在你电脑上的**图像智能体（image agent）**�
 |---|---|
 | 官网 | [figcraft.ai](https://figcraft.ai) · 中国访问 [figcraft.cn](https://figcraft.cn) |
 | 公司 | [QINAXIS · qinaxis.com](https://qinaxis.com) |
-| 我们的另一款产品 | [Beline · beline.ai](https://beline.ai) — 让 AI 替你运营 X（Twitter）账号 |
+| 我们的另一款产品 | [Beline · beline.app](https://beline.app) — 让 AI 替你运营 X（Twitter）账号 |
 | 支持 | <support@qinaxis.cn> |
 
 ## 合规
